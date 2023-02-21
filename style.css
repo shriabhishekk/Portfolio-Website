@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+/* RESETS */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{ 
+/* defining variable so that we can use/change theese thing in the whole webiste from a single click */
+--primary-text-color: #183b56;
+--secondary-text-color: #577592;
+--accent-color: #2294ed;
+--accent-color-dark: #1d69a3;
+--padding-inline-section:20px;
+
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: 'Roboto','sans-serif';
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height:1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display:inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+/* the above is the basic css code for making a website that can be used in multiple websites with few changes */
+/* also caller RESETS */
+
+
+/* Utility class */
+
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container{
+    max-width: 1180px;;
+    margin-inline: auto;
+    padding-inline: var(--accent-color-dark);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.hover-link{
+    color:var(--primary-text-color)
+}
+
+.hover-link:hover{
+    color: var(--accent-color);
+    transition: 0.2s ease-out;
+     
+    
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    /* important is used here so that this color applies since we have defined the color previously */
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2 ease-out;
+
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+    border: 0.5px solid var(--secondary-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding:12px 24px;
+    transition: 0.2 ease-out;
+}
+
+.secondary-button:hover{
+   border-color:var(--accent-color);
+   color: var(--accent-color) !important; 
+
+}
+
+/* nav bar */
+
+.main-nav{
+    justify-content: space-between;
+    font-size: large;
+    margin-bottom:10px;
+    margin-top: 5px;
+    
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap:30px;
+}
+.logo{
+    width:200px;
+}
+.logo img{
+    width:200px;
+   
+}
+
+
+/* introduction */
+.intro-img{
+    
+}
+.intro-img img{
+    width:500px;
+    border-radius:20px;
+}
+
+#title{
+    background-color: var(--primary-text-color);
+    color:white;
+
+    border-radius:9px;
+
+}
+
+.img1{
+    background-position:top;
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:500px;
+    height: 700px;
+   
+    border-radius:20px;
+    /* background-blend-mode: hard-light; */
+    transition: all 1s ease-in-out;
+}
+.img1:hover{
+    background-color: #999;
+    background-position: center;
+    box-shadow: 0 0 4px #fff;
+}
+
+.intro-text {
+    width:620px;
+}
+
+/* about section */
+
+.about{
+    background-color: var(--primary-text-color);
+    margin-top: 20px;
+   
+  
+} 
+.about-section{
+    justify-content: space-between;
+    
+
+}
+
+.about-text{
+    background-color: white;
+    color:#183b56;
+    border-radius: 12px;
+    width:600px;
+    padding:10px;
+   
+}
+.about-text p{
+    padding-top:5px;
+    font-size: 1.2rem;
+}
+
+.about-img img{
+    width:400px;
+    margin-top: 10px;
+}
+
+/* skills */
+.skills-section{
+    height:300px;
+    align-items: center;
+    margin-top: 30px;
+}
+.skills-section h1{
+    text-align: center;
+}
+/* .skills-section p{
+    text-align: center;
+} */
+.skills{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+    
+}
+.skills p{
+    padding: 10px;
+    border: 2px solid #183b56;
+    border-width:medium;
+    border-radius: 7px;
+    display: flex;
+    
+
+}
+
+.skills p:hover{
+    background-color: #2294ed;
+    color:white;
+    transition: 0.5s ease-out;
+}
+
+.skills-logo{
+    
+}
+
+/* expertise-section */
+
+.expertise-section{
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.box{
+    background-color: #183b56;
+    width:350px;
+    height:420px;
+    border-radius: 12px;
+    padding:15px;
+
+}
+.box p{
+    margin-top: 10px;
+    font-size: small;
+    color:white;
+}
+
+.box:hover{
+    background-color: #ff004f;
+    border: 1px solid black;
+    
+}
+
+
+
+
+
+/* contact me */
+
+
+.contact-me{
+    height:500px;
+    align-content: center;
+    justify-content: space-between;
+   
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.social-link{
+    color:var(--primary-text-color);
+    width:50px;
+    font-size: 30px;
+}
+
+.contact-form{
+    width:500px;
+}
+
+.contact-form input{
+    width: 450px;
+    padding:10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem; 
+    margin-top: 10px;
+    background-color:#183b56;
+}
+.contact-form textarea{
+    width: 450px;
+    padding: 10px;
+    background-color: #183b56;
+    color:grey;
+    flex-direction: row;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem; 
+    margin-top: 10px;
+ }
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    background-color: #183b56;
+    height: 60px;
+    text-align: center;
+    padding-top:16px ;
+   
+}
+.footer p{
+    color:grey;
+    font-size: 14px;
+     align-content: center;
+
+}
